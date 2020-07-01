@@ -93,109 +93,43 @@
   <body container body>
     <div class="row">
 
-        <div class="col-6">
-            <div class="favoritos">
-                FAVORITOS
-            </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="img/homem.png" class="card-img" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title">Joao Manuel</h5>
-                      <p class="card-text">42 anos <br> (31)998307645 <br> joaomanuel@gmail.com</p>
-                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="img/homem.png" class="card-img" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title">Nome do usuario</h5>
-                      <p class="card-text">Idade do usuario <br> Telefone do usuario<br> E-mail  </p>
-                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="img/homem.png" class="card-img" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title">Nome do usuario</h5>
-                      <p class="card-text">Idade do usuario <br> Telefone do usuario<br>  E-mail  </p>
-                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-           <!----> 
+      <h1 class="favoritos mb-2 flex-justify-center">
+        FAVORITOS
+      </h1>
+      <form class="favoritos form-inline my-2 my-lg-0 w-100">
+        <div class="w-100 d-flex justify-content-start formulario">
+          <input id="filtro-servico" class="form-control mr-sm-2 mb-3 mt-2" type="search" placeholder="Search" aria-label="Search">
         </div>
-        <div class="col-6">
-            <div class="favoritos">
-                <br>
+      </form>
+    
+      <main class="container">
+    
+        <div id="lista" class="row">
+            <div id="cardParaFiltrar" class="col-12 d-flex flex-wrap justify-content-start">
+              
+                  
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="img/homem.png" class="card-img" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title">Nome do usuario</h5>
-                      <p class="card-text">Idade do usuario <br> Telefone do usuario<br>  E-mail </p>
-                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="img/homem.png" class="card-img" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title">Nome do usuario</h5>
-                      <p class="card-text">Idade do usuario <br> Telefone do usuario<br>  E-mail  </p>
-                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="img/homem.png" class="card-img" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title">Nome do usuario</h5>
-                      <p class="card-text">Idade do usuario <br> Telefone do usuario<br> E-mail  </p>
-                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!---->
-
-        </div>
-    </div>
-</body>
+         </div>
+      </main>
+      <script src="filtroFavoritos.js"></script>
+    
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    
+    </body>
 
       
  <!--INICIO Footer-->
